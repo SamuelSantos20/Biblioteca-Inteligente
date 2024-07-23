@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login - Gerenciador de Livros</title>
+	<link rel="stylesheet" href="/css/login.css">
+		<!-- Open Iconic CSS -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+</head>
+
+<body>
+	<div class="login-container">
+		<!-- Alerts -->
+				<div th:if="${successMessage}" class="alert alert-success" role="alert">
+					<span th:text="${successMessage}"></span>
+				</div>
+
+
+
+				<div th:if="${errorMessage}" class="alert alert-danger" role="alert">
+					<span th:text="${errorMessage}"></span>
+				</div>
+
+		<h2>Login</h2>
+
+		<form th:action="@{/logar}" th:object="${Usuarios}" method="post">
+			<label for="username">Usuário:</label>
+			<input type="text" id="email" name="email" th:field="*{email}" required>
+			<label for="password">Senha:</label>
+			<input type="password" id="password" name="password" th:field="*{senha}" required>
+			<button type="submit">Entrar</button>
+		</form>
+		<p>Não tem uma conta? <a th:href="@{/register}">Cadastre-se aqui</a></p>
+	</div>
+</body>
+
+</html>

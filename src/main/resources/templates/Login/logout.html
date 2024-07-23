@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+	<link rel="stylesheet" href="/css/logout.css">
+</head>
+<body>
+    <div class="logout-container">
+        <h1>Você saiu do sistema</h1>
+        <p>Você foi desconectado com sucesso. Obrigado por usar nosso sistema.</p>
+        <a th:href="@{/login}" class="login-link">Voltar ao Login</a>
+    </div>
+</body>
+</html>

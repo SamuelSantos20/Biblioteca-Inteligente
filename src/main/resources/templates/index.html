@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca Inteligente</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Inteligente</h1>
+        <nav>
+            <ul>
+                
+                <li><strong><a th:href="@{request_login}">Entrar na Plataforma</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bem-vindo à Biblioteca Inteligente</h2>
+            <p>Gerencie sua coleção de livros de forma fácil e eficiente.</p>
+        </section>
+        <section>
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li><strong>Catálogo de Livros:</strong> Veja todos os livros disponíveis.</li>
+                <li><strong>Adicionar Livro:</strong> Adicione novos livros ao catálogo.</li>
+                <li><strong>Login:</strong> Acesse sua conta para gerenciar seus livros.</li>
+                <li><strong>Listas de Leitura :</strong> Crie suas proprias Listas de Leitura.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca Inteligente. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
