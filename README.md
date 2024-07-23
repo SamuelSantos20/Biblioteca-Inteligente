@@ -19,9 +19,14 @@ A **Biblioteca Inteligente** é uma aplicação web que permite gerenciar uma co
 - **ORM**: Hibernate / JPA
 - **Dependências**: Spring Data JPA, Thymeleaf
 
-## Instalação
 
-1. **Clonar o Repositório**
-
-   ```bash
-   git clone https://github.com/seu-usuario/biblioteca-inteligente.git
+Estrutura do Projeto
+src/main/java: Contém o código-fonte Java do projeto.
+domain: Contém as classes de entidades (por exemplo, Livro, Categoria).
+dao: Contém as interfaces de acesso a dados e suas implementações.
+service: Contém a lógica de negócios e os serviços.
+controller: Contém os controladores REST e MVC.
+src/main/resources: Contém arquivos de configuração e templates.
+application.properties: Configurações da aplicação.
+templates: Contém arquivos Thymeleaf para a interface do usuário.
+static: Contém arquivos estáticos como CSS e JavaScript.
